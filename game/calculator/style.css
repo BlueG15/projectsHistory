@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Odibee+Sans&family=Sarpanch&display=swap');
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  overflow: hidden;
+  
+}
+
+.body {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.vbody {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.keypad {
+  background: black;
+  width: 50%;
+  height: 100vh;
+  padding:  0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.vkeypad {
+  touch-action: manipulation;
+  background: black;
+  width: 100vw;
+  height: 50vh;
+  padding:  0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.cpad {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.key {
+  border: 5px;
+  border-radius: 15px;
+  width: calc((50vw / 4) - 10px);
+  height: calc((100vh / 4) - 12px);
+  margin: 5px;
+  font-size: xx-large;
+  color: rgb(224, 245, 245);
+  background: #2f3136;
+  font-family: 'Audiowide', cursive;
+  user-select: none;
+}
+
+.vkey {
+  border: 5px;
+  border-radius: 15px;
+  width: calc((100vw / 4) - 10px);
+  height: calc((50vh / 4) - 12px);
+  margin: 5px;
+  font-size: 55px;
+  color: rgb(224, 245, 245);
+  background: #2f3136;
+  font-family: 'Audiowide', cursive;
+  user-select: none;
+}
+
+button:active {
+  background: #23272a;
+  transform: translateY(10px) scale(0.8);
+  
+}
+
+.bigkey {
+  height: calc(100vh - 12px)
+}
+
+.vbigkey {
+  height: calc(50vh - 12px)
+}
+
+.numpad {
+  font-family: 'Audiowide', cursive;
+}
+
+.screen {
+  width: 50%;
+  height: 100vh;
+  background: #4f5d7e;
+  padding:  0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.vscreen {
+  width: 100vw;
+  height: 50vh;
+  background: #4f5d7e;
+  padding:  0;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.timer {
+    width: calc(100vw / 3);
+    padding: 0;
+    padding-left: 15px;
+    font-family: 'Sarpanch', cursive;
+    font-size: xx-large;
+}
+
+.vtimer {
+    width: calc(100vw / 3);
+    padding: 0;
+    padding-left: 15px;
+    font-family: 'Sarpanch', cursive;
+    font-size: 60px;
+}
+
+#counter{
+  position: absolute;
+  top: 0;
+}
+
+.counters{
+  left: 8.2vw
+}
+
+.counterm{
+  left: 10.5vw
+}
+
+.counterms{
+  left: 5.5vw
+}
+
+.counterh{
+  left: 13.5vw
+}
+
+.vcounter {
+  transform: translateX(20px) translateY(40px);
+}
+
+.number {
+  position: relative;
+  width: calc(100% - 200px);
+  height: 100%;
+  padding-top: 10vh;
+  padding-left: 30%;
+  transform: scaleX(1.15) scaleY(1.15);
+}
+
+.vnumber {
+  position: relative;
+  width: calc(100% - 200px);
+  height: 100%;
+  padding-top: 5vh;
+  transform: scaleX(1.1) scaleY(1.1) translateX(calc(100vw / 3)) ;
+}
+
+.segment {
+  width: 200px;
+  height: 30px;
+  background: #fff5;
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+  margin: 10px;
+  position: absolute;
+
+}
+
+.segment.active {
+  background: #583694;
+}
+
+.segment#id-1 {
+  transform: translateX(-120px) translateY(120px) rotate(90deg);
+}
+
+.segment#id-2 {
+  transform: translateX(120px) translateY(120px) rotate(90deg);
+}
+
+.segment#id-3 {
+  transform: translateX(0px) translateY(240px);
+}
+
+.segment#id-4 {
+  transform: translateX(-120px) translateY(360px) rotate(90deg);
+}
+
+.segment#id-5 {
+  transform: translateX(120px) translateY(360px) rotate(90deg);
+}
+
+.segment#id-6 {
+  transform: translateY(480px);
+}
+
+.option {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+}
+
+.box {
+  width: 80vw;
+  height: 20vh;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+
+
+.invi {
+  display: none;
+}
+
+
+
+

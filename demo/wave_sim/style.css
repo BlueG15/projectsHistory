@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Odibee+Sans&family=Sarpanch&display=swap');
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  overflow: hidden;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  display : flex;
+  flex-direction:row;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.node {
+  border-radius: 100px;
+  border: 7px ridge #cecece;
+  width: 25px;
+  height: 25px;
+
+}
+
+#slider {
+  position: absolute;
+  top:0px;
+  left: 0px;
+}
+
+.invi {
+  display: none;
+}

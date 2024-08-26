@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html id = document>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="test.js"></script>
+  </head>
+  <body onload = "init()" id = 'body'>
+    <canvas class = 'pain' id = 'paint'> </canvas>
+    <!-- <canvas class = 'pain' id = 'paint1'> </canvas>
+    <canvas class = 'pain' id = 'paint2'> </canvas> -->
+    <div id = "control-panel">
+      <textarea id = 'box'></textarea>>
+      <button id = 'button1' onclick="test('paint', true)">advance 1 frame</button>
+      <button id = 'button2' onclick="test('paint')">start simulation</button>
+      <button id = 'button2' onclick="toggleStop('paint')">pause / continue</button>
+    </div>
+  </body>
+</html>

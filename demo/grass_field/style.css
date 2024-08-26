@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Odibee+Sans&family=Sarpanch&display=swap');
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#field {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 150vw;
+  min-height: 150vh;
+  background-color: rgb(67, 176, 62);
+}
+
+.grass {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2ff7567-427a-43e8-9446-b08937695ae9/d4l51sz-c91c22a3-c2ce-4288-9612-09eb13ddb664.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UyZmY3NTY3LTQyN2EtNDNlOC05NDQ2LWIwODkzNzY5NWFlOVwvZDRsNTFzei1jOTFjMjJhMy1jMmNlLTQyODgtOTYxMi0wOWViMTNkZGI2NjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VW_FurDPGyyevP5C2t1LXtarDIdCDztV9AnhVL0PL58);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-origin: bottom center;
+  transform: rotate(var(--rot)) scale(1.8);
+  transition: 1s;
+}
+
+.rotRight {
+  transform: rotate(var(--rot2)) scale(2.4);
+}
+
+.rotLeft {
+  transform: rotate(var(--rot3)) scale(2.4);
+}
+
+.invi {
+  display: none;
+}

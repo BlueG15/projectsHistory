@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Odibee+Sans&family=Sarpanch&display=swap');
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.picture {
+  align-self: center;
+  justify-self: center;
+  border: solid 8px cyan;
+  background-color: aquamarine;
+  width: 45vw;
+  height: 55vh;
+  border-radius: 25px;
+  overflow: visible;
+  transition: .3s;
+  background-image: var(--url);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tilt_effect:hover {
+  margin: 50px;
+  z-index: 5;
+  transition: 0s;
+  transform-origin: center;
+  transform: rotate3d(var(--axisx), var(--axisy), 0, var(--rot));
+  background-blend-mode: color-burn, hard-light, normal;
+  background-image: linear-gradient(
+    var(--rot2), 
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0) 20%, 
+    rgba(0,0,0,0) 100%), linear-gradient(
+      var(--rot2), 
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0) 80%, 
+      rgba(255,255,255,1) 100%), var(--url);
+  box-shadow: calc(-1 * var(--axisy) * 0.1 * 1px) calc(var(--axisx) * 0.1 * 1px) 6px 0px rgba(255,255,255,1)
+}
+
+#link-input {
+  position: absolute;
+  resize: none;
+  width: 50vw;
+  top: 10px;
+  left: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  height: 27px;
+  padding: 2px;
+  overflow: hidden;
+  border: 5px solid rgb(47, 97, 206);
+  border-radius: 15px;
+  
+}
+
+.invi {
+  display: none;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html id = document>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body id = 'body' onload = 'init()'>
+    <div id = "container">
+      <input id = "xinput" placeholder="input x center"></input>
+      <input id = "yinput" placeholder="input y center"></input>
+      <input id = "equationInput" placeholder="f(x) ="></input> 
+      <button onclick = "updateFunction()"> draw </button>
+      <button onclick = "clearCanvas('graphArea')"> clear </button>
+    </div>
+    <canvas class = "canvas" id = "graphArea"></canvas>
+  </body>
+</html>

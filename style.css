@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Odibee+Sans&family=Sarpanch&display=swap');
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(67, 69, 74);
+}
+
+.window {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  z-index: -1;
+}
+
+#window-welcome {
+  top: 25px;
+  left: 100px;
+}
+
+.window-area {
+  color: rgb(35, 34, 32);
+  background-color: rgb(204, 180, 244);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  /* align-items: center;
+  justify-content: center; */
+  width: 600px;
+  padding: 10px;
+  text-align: left;
+  height: fit-content
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  overflow-x: wrap;
+}
+
+#demo-list {
+  background-color: aquamarine;
+}
+
+.window-top {
+  background-color: blueviolet;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(93, 0, 147);
+  width: 620px;
+  text-align: end;
+  align-self: center;
+}
+
+.item {
+  max-width: 100px;
+  width : fit-content;
+  padding-bottom: 10px;
+  padding-right: 7px;
+  padding-left: 7px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  margin-right: 5px;
+  transition: 1s;
+}
+
+.item:hover {
+  border : 2px dashed white;
+  border-radius: 15px;
+}
+
+.item-image {
+  text-align: center;
+  font-style: normal;
+  font-size: 50px;
+  color: burlywood
+}
+
+.item-name {
+  text-align: center;
+}
+
+#demoWindow {
+  background-color: aquamarine;
+}
+
+.invi {
+  display: none;
+}
+
+#window-desc {
+  z-index: 20;
+  left : "";
+  top : "";
+}
+
+#window-top-desc {
+  width: 320px;
+}
+
+#window-area-desc {
+  width: 300px;
+}
+
+#window-top-demo {
+  background-color: rgb(43, 101, 226);
+}
+
+#window-demo {
+  top: 20vh;
+  left: 50vw;
+}
+
+#window-game {
+  top: 40vh;
+  left: 5vw;
+}
+
+#window-top-game {
+  width: 400px;
+  background-color: chocolate;
+}
+
+#gameWindow {
+  width: 380px;
+  background-color: cadetblue;
+}
+
+.noSelect {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}

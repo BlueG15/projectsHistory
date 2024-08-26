@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html id = document>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body id = 'body' onload = 'init()'>
+
+    <div class = "window noSelect" id = "window-welcome">
+      <div class = "window-top" id = "window-top-welcome" onmouseenter = "addWindowToMove('window-top-welcome')" onmouseleave="removeMarkedWindow()">| 🗕 | 🗗 | 🗙 |</div>
+      <div class = "window-area" onclick="setTypeBreak([`welcome1`, `welcome2`])">
+        <div id = "welcome1"></div>
+        <div id = "welcome2"></div>
+      </div>
+    </div>
+
+    <div class = "window noSelect invi" id = "window-desc">
+      <div class = "window-top" id = "window-top-desc" onmouseenter = "addWindowToMove('window-top-desc')" onmouseleave="removeMarkedWindow()">| 🗕 | 🗗 | 🗙 |</div>
+      <div class = "window-area" id = "window-area-desc" onclick="setTypeBreak([`desc-area`])">
+        <div id = "desc-area"></div>
+      </div>
+    </div>
+
+    <div class = "window noSelect" id = "window-demo" onmouseleave="toggleDescOff()">
+      <div class = "window-top" id = "window-top-demo" onmouseenter = "addWindowToMove('window-top-demo')" onmouseleave="removeMarkedWindow()">| 🗕 | 🗗 | 🗙 |</div>
+      <div id = "demoWindow" class = "window-area" onclick="setTypeBreak([`footnote-demo`])">
+        
+        <div class = "footnote" id = "footnote-demo"></div>
+      </div>
+    </div>
+
+    <div class = "window noSelect" id = "window-game" onmouseleave="toggleDescOff()">
+      <div class = "window-top" id = "window-top-game" onmouseenter = "addWindowToMove('window-top-game')" onmouseleave="removeMarkedWindow()">| 🗕 | 🗗 | 🗙 |</div>
+      <div id = "gameWindow" class = "window-area" onclick="setTypeBreak([`footnote-game`])">
+        
+        <div class = "footnote" id = "footnote-game"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
