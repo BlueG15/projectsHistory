@@ -55,6 +55,11 @@ let projectList = {
             url: "/demo/wave_sim/main.html",
             name: "Wave simulator",
             desc: "Demo of wave physics.----------------------------------------Controls: Left click to send a shockwave away from it, proportional to how far the mouse is from the element----------------------------------------Notes: This was made as a study of how multiple waves interact--------------------There are like a bunch of values that can be tweak like how fast the wave should damp, how strong the force is, etc----------------------------------------No I will not make a slider for every single of them, sorry."
+        },
+        "dvd_bubble_sim" : {
+            url: "/demo/dvd_bubble_sim/main.html",
+            name: "DVD bubble sim",
+            desc: "Demo of dvd logo + bubble effect, fun"
         }
     },
     game : {
