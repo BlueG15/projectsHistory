@@ -1,9 +1,16 @@
 let typeBreak = [];
+let typeStop = [];
 let windowToMove = undefined;
 let mdown = false;
 let mdownPos = [];
 let originalWinPos = undefined;
 let pDistance = 1000;
+
+let mPos = [-1, -1];
+let lockVelocity = 50;
+let lockTime = 80;
+
+let tempTimeOut = "";
 
 const allWindowsID = ["window-top-welcome", "window-top-demo", "window-top-game"]
 
@@ -120,19 +127,26 @@ function init(){
 
             //move(windowToMove, allWindowsID.filter(i => i != windowToMove)[0])
         }
-
         let a = event.clientY - 200;
         let b = event.clientX - 400;
 
-        if(a < 0) a = window.visualViewport.height* 40/100 + a;
-        if(b < 0) b = window.visualViewport.width* 40/100 + b;
+        if(a < 0) a = window.visualViewport.height * 40/100 + a;
+        if(b < 0) b = window.visualViewport.width * 40/100 + b;
 
         a = Math.round(a);
         b = Math.round(b);
         document.getElementById("window-desc").style.top = a + "px";
         document.getElementById("window-desc").style.left = b + "px";
+
+        if(mPos.length < 2){
+            mPos.push([event.clientX, event.clientY]);
+        } else {
+            mPos[0] = mPos[1];
+            mPos[1] = [event.clientX, event.clientY];
+        }
     })
 
+    let c = 0;
     setInterval(() => {
         for(let i = 0; i < allWindowsID.length; i++){
             for(let l = 0; l < allWindowsID.length; l++){
@@ -140,6 +154,22 @@ function init(){
                 moveBasic(allWindowsID[i], allWindowsID[l]);
             }
         }
+
+        if(mPos.length == 2){
+            if(Math.hypot(mPos[0][0] - mPos[1][0], mPos[0][1] - mPos[1][1]) > lockVelocity){
+                document.getElementById('window-desc-cover').classList.add('invi');
+            } else {
+                if(c >= lockTime){
+                    document.getElementById('window-desc-cover').classList.remove('invi');
+                    typeBreak = typeBreak.filter(i => i != "window-desc");
+                    c = 0;
+                } else {
+                    typeBreak.push("window-desc");
+                    c++;
+                }
+            }           
+        }
+
     }, 1000/30)
 }
 
@@ -148,9 +178,11 @@ async function type(strArr, idArr, customTime){
     if(!customTime) customTime = 100
     for(let i = 0; i < strArr.length; i++){
         for(let k = 0; k <= strArr[i].length; k++){
-            document.getElementById(idArr[i]).innerText = strArr[i].slice(0, k);
+            let a = document.getElementById(idArr[i]).innerText;
+            if(!strArr[i].startsWith(a)) return;
+            if(typeBreak.includes(idArr[i])) break;
 
-            if(typeBreak.includes(idArr[i])) break
+            document.getElementById(idArr[i]).innerText = strArr[i].slice(0, k);
 
             await sleep(customTime);
             c++
@@ -233,7 +265,7 @@ function normalize(arr, factor){
 
 let descStr = "";
 async function toggleDescOn(str, id){
-    typeBreak.push(id);
+    typeBreak.push("window-desc");
     await sleep(100);
     typeBreak = typeBreak.slice(0, -1);
     document.getElementById("window-desc").classList.remove("invi");
@@ -262,7 +294,7 @@ function redirect(url){
         window.location.href = url;
         return;
     } else if(url.startsWith("/")) {
-        window.location.href = window.location.origin + url;
+        window.location.href = window.location.href.replace("/main.html", url);
     }
 }
 
