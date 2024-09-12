@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>gulugulu translator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js"></script>
+    <style></style>
+  </head>
+
+  <body onload="kcheck()">
+    <div id="header" style="justify-content: space-between">
+      <h1 style="padding-left: 10px">Gulugulu translator</h1>
+      <a id="copyright"> Copyrighted 2021 <br> Blu/Thesleepyracoon </a>
+      <!--button  class = "button" onclick = "cow('Homepage')"> Homepage </button-->
+      <!--button  class = "button" id = "nolb" onclick = "cow('Cow')"> Cow </button-->
+    </div>
+
+    <div class="left-column">
+      <select id="dropbox" onchange="update()">
+        <option value="none" selected="" disabled="">choose a mode</option>
+        <option value="trans">gulugulu translator</option>
+        <option value="ify">make string gulugulu</option>
+      </select>
+      <!--input type="number" style="
+        font-size: 35px;
+        margin-bottom: 10px; 
+        width: 80px;" min="1" max="50" onchange="ch(this)"-->
+      <textarea
+        id="str"
+        type="text"
+        placeholder="Enter gulugulu"
+        ondblclick="cls()"
+        
+      /></textarea>
+      <button
+        id="button"
+        onclick="re(document.getElementById(`dropbox`).value)"
+      >
+        enter
+      </button>
+      <button id="button" onclick="cls()">clear</button>
+      <!--button id="button" onclick="se()">select</button-->
+    </div>
+
+    <div class="right-column">
+      <textarea onClick = "se()" id="output" type="text" placeholder="Output" disabled="" ></textarea>
+
+      <button
+        id="button"
+        onclick="save(document.getElementById('output').value)"
+      >
+        copy
+      </button>
+    </div>
+
+    <!--div class="cprt">
+      <a>Copyrighted 2021</a>
+      <a>Blu \ Thesleepyracoon</a>
+    </div-->
+  </body>
+</html>

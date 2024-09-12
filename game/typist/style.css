@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Odibee+Sans&family=Sarpanch&display=swap');
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.box {
+  color : black;
+  background-color: white;
+  font-size : 25px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: wavy;
+  position : absolute;
+  top : 0px;
+  left: 0px;
+  transition: all 1s;
+}
+
+.box:hover {
+  transform: scale(2);
+}
+
+.explode {
+  transform: scale(2);
+  transition: all 1s;
+}
+
+.typed {
+  color : greenyellow
+}
+
+.invi {
+  display: none;
+}
+

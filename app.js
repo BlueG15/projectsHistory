@@ -60,6 +60,11 @@ let projectList = {
             url: "/demo/dvd_bubble_sim/main.html",
             name: "DVD bubble sim",
             desc: "Demo of dvd logo + bubble effect, fun"
+        },
+        "gulu_translator" : {
+            url : "/demo/gulutrans/main.html",
+            name : "gulugulu",
+            desc : "Demo of an early lossless encryption/decryption engine (not very efficient), also looks funny"
         }
     },
     game : {
