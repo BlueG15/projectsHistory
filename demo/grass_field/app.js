@@ -5,7 +5,7 @@ const width = window.visualViewport.width - padding_w
 const height = window.visualViewport.height - padding_h
 
 const grassNumber = 1400
-const numberOfGrass = 40//Math.floor((Math.PI * affectRadius * affectRadius) / (width * height));
+const numberOfGrass = 30//Math.floor((Math.PI * affectRadius * affectRadius) / (width * height));
 
 let grassMap = new Map();
 let grassArr = [];
