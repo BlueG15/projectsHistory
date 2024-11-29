@@ -30,6 +30,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   transform-origin: bottom center;
+  opacity: .7;
   transform: rotate(var(--rot)) scale(1.8);
   transition: 1s;
   will-change: "transform";
