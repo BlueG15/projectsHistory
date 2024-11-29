@@ -24,14 +24,19 @@ body {
 
 .grass {
   position: absolute;
-  width: 70px;
-  height: 70px;
-  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2ff7567-427a-43e8-9446-b08937695ae9/d4l51sz-c91c22a3-c2ce-4288-9612-09eb13ddb664.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UyZmY3NTY3LTQyN2EtNDNlOC05NDQ2LWIwODkzNzY5NWFlOVwvZDRsNTFzei1jOTFjMjJhMy1jMmNlLTQyODgtOTYxMi0wOWViMTNkZGI2NjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VW_FurDPGyyevP5C2t1LXtarDIdCDztV9AnhVL0PL58);
+  width: 30px;
+  height: 60px;
+  background-image: url(./grass_crop.png);
   background-repeat: no-repeat;
   background-size: cover;
   transform-origin: bottom center;
   transform: rotate(var(--rot)) scale(1.8);
   transition: 1s;
+  will-change: "transform";
+  image-rendering: optimizeSpeed;
+  image-resolution: .3dppx;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .rotRight {
@@ -40,6 +45,25 @@ body {
 
 .rotLeft {
   transform: rotate(var(--rot3)) scale(2.4);
+}
+
+.anim {
+  animation: 3s ease-in-out var(--delay) infinite alternate-reverse sway;
+}
+
+@keyframes sway {
+  0%  {
+    transform: rotate(var(--rot)) scale(1.8);
+  }
+  33% {
+    transform: rotate(calc(var(--rot) - 5deg)) scale(1.8);
+  }
+  66% {
+    transform: rotate(calc(var(--rot) + 5deg)) scale(1.8);
+  }
+  100%  {
+    transform: rotate(var(--rot)) scale(1.8);
+  }
 }
 
 .invi {
