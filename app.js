@@ -65,6 +65,11 @@ let projectList = {
             url : "/demo/gulutrans/main.html",
             name : "gulugulu",
             desc : "Demo of an early lossless encryption/decryption engine (not very efficient), also looks funny"
+        },
+        "glowing_dots" : {
+            url : "/demo/glowing_dots/main.html",
+            name : "Glowing dots",
+            desc : "Demo of glowing dots following mouse cursor utilizing kd-tree for fast nearest neighbor search"
         }
     },
     game : {
