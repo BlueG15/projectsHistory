@@ -1,6 +1,8 @@
 # projectsHistory
 (Almost )All my past random projects in one place!!
 
+URL : https://blueg15.github.io/projectsHistory/
+
 and because I am bad at wring descriptions, here is a JSON file:
 
 {
