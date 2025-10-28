@@ -137,7 +137,15 @@ function drawFrame() {
 
     gl.drawArrays(gl.TRIANGLES, 0, triangleCounts);
 
+    if(typeof gl.getError === "function"){
+        const err = gl.getError()
+        if(err) console.log(`Potential error: `, err)
+    } else {
+        // console.log(`No get error present`)
+    }
+
     requestAnimationFrame(drawFrame)
+
 }
 
 let mouseDownInterval;
@@ -178,12 +186,17 @@ function init(){
         requestAnimationFrame(drawFrame)
     }
 
-    document.addEventListener("mousedown", (ev => {
-        scythe.classList.add("rotated")
-        mouseDownInterval = setInterval(() => mouseDownCounter++, 100)
+    document.addEventListener("pointerdown", (ev => {
+        if(ev.pointerType !== "mouse"){
+            console.log(ev.type)
+            deleteGrass(ev.x, ev.y)
+        } else {
+            scythe.classList.add("rotated")
+            mouseDownInterval = setInterval(() => mouseDownCounter++, 100)
+        }
     }))
     
-    document.addEventListener("mouseup", (ev) => {
+    document.addEventListener("pointerup", (ev) => {
         clearInterval(mouseDownInterval)
         mouseDownCounter /= 10
         log(`Held mouse down for ${mouseDownCounter} seconds)`)

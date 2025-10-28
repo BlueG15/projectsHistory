@@ -59,7 +59,7 @@ function bringFloatArrayToGPU(gl, program, data, attrName, partioningSize){
 
     let res = 0
     res = data.length
-    return res
+    return res / partioningSize
 }
 
 function setupTexture(gl, image) {
