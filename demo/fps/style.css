@@ -67,16 +67,16 @@ body {
 } */
 
 .floor {
-  background-image: url(./brick.jpg);
+  /* background-image: url(./brick.jpg); */
   background-size: cover;
   filter: grayscale(max( (1 - var(--opacity)) ,.3));
 }
 
-.ceiling {
-  /* background-image: url(./brick.jpg);
+/* .ceiling {
+  background-image: url(./brick.jpg);
   background-size: cover; 
-  filter: grayscale(max( (1 - var(--opacity)) ,.3)); */
-} 
+  filter: grayscale(max( (1 - var(--opacity)) ,.3));
+}  */
 
 .invi {
   display: none;
