@@ -188,7 +188,6 @@ function init(){
 
     document.addEventListener("pointerdown", (ev => {
         if(ev.pointerType !== "mouse"){
-            console.log(ev.type)
             deleteGrass(ev.x, ev.y)
         } else {
             scythe.classList.add("rotated")
@@ -260,15 +259,14 @@ function binarySearch(arr, comparator, T, forced = false){
         
         const comparedResult = comparator(arr[M], T, M)
         if(comparedResult === 0) return M;
-        if(comparedResult > 0) L = M + 1;
-        if(comparedResult < 0) R = M - 1;
+        if(comparedResult < 0) L = M + 1;
+        if(comparedResult > 0) R = M - 1;
     }
     
-    return forced ? L : -1; //returns best result if T is not provided
+    return forced ? L : -1; //returns best result if forced
 }
 
 function insertionSort(arr, element, comparator){
-    //binary search the index
     const i = binarySearch(
         arr, 
         comparator,
@@ -280,7 +278,7 @@ function insertionSort(arr, element, comparator){
 }
 
 function spawnRandomGrass(c = 1, isNew = true){
-    const doInsertionSort = false//c <= 100
+    const doInsertionSort = c <= 100
     const grassComparitor = (a, b) => b.y - a.y
     while(c--){
         const newGrass = new Grass(
@@ -318,6 +316,8 @@ function updateGrassVelocity(mx, my){
 }
 
 function log(...str){
+    //disabled to avoid logging :>>
+
     // str = str.join("\n")
     // const log = document.getElementById("log")
     // let old = log.innerText
