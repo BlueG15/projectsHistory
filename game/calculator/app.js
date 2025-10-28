@@ -21,16 +21,21 @@ const number = [
 
 ]
 
-const random = () => {
-    const rng = (min, max) => {
-        //The maximum is exclusive and the minimum is inclusive
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min) + min);
+const rng = (min, max) => {
+    //The maximum is exclusive and the minimum is inclusive
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+}
 
-    }
-    for (let i = 0; i <= 100; i++) {
-        refreshDisplay(number[rng(0, 10)]);
+const random = () => {
+    //remove the 100 random shuffle thingy
+    //lights out therem : every arrangement is determined by the set of unique moves
+    //beecause 2 deplicateed moves perfectly cancel out each other regardless of order
+    for (let i = 0; i <= 9; i++) {
+        if(Math.random() <= 0.5) {
+            refreshDisplay(number[i]);
+        }
     }
     ok = true
     document.getElementById("timer").innerText = "00:00:00"

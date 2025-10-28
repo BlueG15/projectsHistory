@@ -1,58 +1,114 @@
 # projectsHistory
-(Almost )All my past random projects in one place!!
+(Almost) All my past random projects in one place!!
 
-URL : https://blueg15.github.io/projectsHistory/
+URL : https://blueg15.github.io/projectsHistory/main.html
 
-and because I am bad at wring descriptions, here is a JSON file:
+Probably bad tbh, most codes here are very old;
 
-{
-    demo: {
-        "collision_detection" : {
-            url: "/demo/collision_detection/main.html",
-            name: "Collision detection",
-            desc: "Demo of a [Is point in a polygon] test, allow for both convex and concave, O(n).----------------------------------------Algo desciption: Project a beam to the right of the test point, if it crosses an odd number of lines, test point is in polygon, otherwise not."
-        },
-        "fps" : {
-            url: "/demo/fps/main.html",
-            name: "No canvas fps",
-            desc: "Demo of a fps camera using css rotate3d.----------------------------------------Controls: Move using WASD.--------------------Rotate camara with arrow keys.----------------------------------------Note: very jank, even the collision detection is jank, granted this is the 1st time I deal with 3d maths and this is just a concept to see if the idea works."
-        },
-        "game_of_life" : {
-            url: "/demo/game_of_life/main.html",
-            name: "Conway's game of life",
-            desc: "Demo of any cellular automaton, the code rn is config to conway game of life.----------------------------------------Note: Somehow the user input canvas and the simulation canvas is offset, idk why and the code is too old at this point to try to understand and fix, pls let me know if you found the cause."
-        },
-        "graph" : {
-            url: "/demo/graph/main.html",
-            name: "Graph calc",
-            desc: "Demo of a graphing calculator.----------------------------------------Note: Leave offset blank to have it be the defaualt position, offset of the top left corner is 0, down is y+ and right is x+--------------------Technically the input is ANY js function that returns a number, I have support for common math ops + random without typing Math.----------------------------------------Yes the input is being sanitized, im not dum, though I may be dum enough to not sanitize all possible bad code."
-        },
-        "graph_with_explosion" : {
-            url: "/demo/graph_with_explosion/main.html",
-            name: "Graph calc with explosion",
-            desc: "Demo of the game graph wars, just...input some functions and find out.----------------------------------------Notes: This is a folk of the graphing calculator demo, all notes of that project applies here too."
-        },
-        "grass_field" : {
-            url: "/demo/grass_field/main.html",
-            name: "Grass field",
-            desc: "Demo of a grassy field that reacts to mouse movement.----------------------------------------Notes: I wonder how I can apply this as wallpaper"
-        },
-        "hover_3d" : {
-            url: "/demo/hover_3d/main.html",
-            name: "Hover 3d",
-            desc: "Demo of a 3d card that rotates in 3d to your mouse cursor.----------------------------------------Notes: I made this b4 someone told me this is what steam tradin card looks like.--------------------This is the simplest demo code wise so far, just math."
-        },
-        "wave_sim" : {
-            url: "/demo/wave_sim/main.html",
-            name: "Wave simulator",
-            desc: "Demo of wave physics.----------------------------------------Controls: Left click to send a shockwave away from it, proportional to how far the mouse is from the element----------------------------------------Notes: This was made as a study of how multiple waves interact--------------------There are like a bunch of values that can be tweak like how fast the wave should damp, how strong the force is, etc----------------------------------------No I will not make a slider for every single of them, sorry."
-        }
-    },
-    game : {
-        "calculator" : {
-            url: "/game/calculator/main.html",
-            name: "That one calculator game",
-            desc: "The calculator game I demo to the qp community a while back.----------------------------------------Rules and Controls: Each number toggles the lights that number occupies in a 7 segment display, (on -> off and vice versa).--------------------The goal is given a random reachable state, turn off all the lights.----------------------------------------[Shuffle] button enters speedrun mode and [Clear] button disables it, I completely dont know what the [Enter] button do tbh, doesnt seem to affect anything----------------------------------------Notes: You can get a 00:00:00 time.--------------------This is very similar to [Lights out] and since that was solved using linear algebra, this probably can be as well.--------------------I wonder if any possible state is solvable."
-        }
-    }
-}
+Main website's controls
+* `[Hover]` on a file to view its descriptions
+* `[Double click]` to go to that page
+
+## Demo section
+
+### [Collision detection](/demo/collision_detection/main.html)
+
+Demo of an **“is point in a polygon”** test supporting convex and concave shapes — O(n).
+Algorithm: Project a beam to the right of the test point; if it crosses an odd number of lines, the point is inside.
+2025 comment: This algo is very primitive and proine to errors, maybe I will explore more options in the future.
+
+---
+
+### [No canvas FPS](/demo/fps/main.html)
+
+FPS camera using `rotate3d` CSS transforms.
+**Controls:** Move with WASD, rotate with arrow keys.
+Note: very jank — first 3D math attempt, mainly a concept test.
+
+---
+
+### [Conway’s Game of Life](/demo/game_of_life/main.html)
+
+Demo of a simple cellular automaton (configured as Conway’s Game of Life).
+Note: input and simulation canvases are offset for unknown reasons — code too old to fix.
+
+---
+
+### [Graph Calc](/demo/graph/main.html)
+
+Graphing calculator.
+Offset is optional — (0,0) is top-left; +x right, +y down.
+Input accepts any JS function returning a number (common math ops + random supported).
+Yes, input is sanitized. *Probably.*
+
+---
+
+### [Graph Calc with Explosion](/demo/graph_with_explosion/main.html)
+
+Game-like spin on the graphing calculator — try inputting wild functions and see what happens.
+Forked from Graph Calc; same notes apply.
+
+---
+
+### [Grass Simulator 1](/demo/grass_field/main.html)
+
+Grassy field reacting to mouse movement.
+Note: should probably be a wallpaper someday.
+
+---
+
+### [Hover 3D](/demo/hover_3d/main.html)
+
+3D card rotating with mouse movement.
+Fun fact: accidentally recreated Steam trading cards.
+Simplest demo math-wise.
+
+---
+
+### [Wave Simulator](/demo/wave_sim/main.html)
+
+Wave physics playground.
+**Controls:** Left click to send a shockwave outward (strength depends on mouse distance).
+Adjustable parameters include damping, strength, and more (no sliders, sorry).
+Made to study wave interference.
+
+---
+
+### [DVD Bubble Sim](/demo/dvd_bubble_sim/main.html)
+
+DVD logo meets bubble effects. Pure fun.
+
+---
+
+### [Gulugulu Translator](/demo/gulutrans/main.html)
+
+Early experiment with **lossless encryption/decryption** (inefficient, but funny).
+
+---
+
+### [Glowing Dots](/demo/glowing_dots/main.html)
+
+Glowing dots follow your mouse using a **kd-tree** for fast nearest-neighbor search.
+
+---
+
+## Games section
+
+### [That One Calculator Game](/game/calculator/main.html)
+
+Puzzle based on 7-segment display toggling.
+**Goal:** turn off all the lights.
+
+* `[Shuffle]` → Start playing (with timer)
+* `[Clear]` → Restart
+* `[Enter]` → Button do tbh, doesnt seem to affect anything
+
+Inspired by *Lights Out*; likely solvable via linear algebra.
+2025 note: Yeah totally solvale with algebra.
+
+---
+
+### [Grass Simulator 2 (Now with More FPS!)](/game/grass/main.html)
+
+WebGL experiment — faster and smoother than Grass 1, even without a kd-tree.
+Now with cutting the grass!

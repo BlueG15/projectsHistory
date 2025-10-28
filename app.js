@@ -14,7 +14,7 @@ let tempTimeOut = "";
 
 const allWindowsID = ["window-top-welcome", "window-top-demo", "window-top-game"]
 
-let projectList = {
+const projectList = {
     demo: {
         "collision_detection" : {
             url: "/demo/collision_detection/main.html",

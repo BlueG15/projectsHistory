@@ -188,7 +188,10 @@ function init(){
         mouseDownCounter /= 10
         log(`Held mouse down for ${mouseDownCounter} seconds)`)
 
-        deleteGrass(ev.x, ev.y)
+        if(mouseDownCounter > 0.2){
+            deleteGrass(ev.x, ev.y)
+        }
+
         scythe.classList.remove("rotated")
         scythe.classList.remove("shaking")
         scythe.classList.remove("shake_harder")
@@ -302,11 +305,11 @@ function updateGrassVelocity(mx, my){
 }
 
 function log(...str){
-    str = str.join("\n")
-    const log = document.getElementById("log")
-    let old = log.innerText
-    if(old.length > 5000) old = "";
-    log.innerText = old + "\n" + str
+    // str = str.join("\n")
+    // const log = document.getElementById("log")
+    // let old = log.innerText
+    // if(old.length > 5000) old = "";
+    // log.innerText = old + "\n" + str
 }
 
 function dist(x1, y1, x2, y2){
