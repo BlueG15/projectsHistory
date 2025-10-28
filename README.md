@@ -11,7 +11,7 @@ Main website's controls
 
 ## Demo section
 
-### [Collision detection](/demo/collision_detection/main.html)
+### [Collision detection](https://blueg15.github.io/projectsHistory/demo/collision_detection/main.html)
 
 Demo of an **“is point in a polygon”** test supporting convex and concave shapes — O(n).
 Algorithm: Project a beam to the right of the test point; if it crosses an odd number of lines, the point is inside.
@@ -19,7 +19,7 @@ Algorithm: Project a beam to the right of the test point; if it crosses an odd n
 
 ---
 
-### [No canvas FPS](/demo/fps/main.html)
+### [No canvas FPS](https://blueg15.github.io/projectsHistory/demo/fps/main.html)
 
 FPS camera using `rotate3d` CSS transforms.
 **Controls:** Move with WASD, rotate with arrow keys.
@@ -27,14 +27,14 @@ Note: very jank — first 3D math attempt, mainly a concept test.
 
 ---
 
-### [Conway’s Game of Life](/demo/game_of_life/main.html)
+### [Conway’s Game of Life](https://blueg15.github.io/projectsHistory/demo/game_of_life/main.html)
 
 Demo of a simple cellular automaton (configured as Conway’s Game of Life).
 Note: input and simulation canvases are offset for unknown reasons — code too old to fix.
 
 ---
 
-### [Graph Calc](/demo/graph/main.html)
+### [Graph Calc](https://blueg15.github.io/projectsHistory/demo/graph/main.html)
 
 Graphing calculator.
 Offset is optional — (0,0) is top-left; +x right, +y down.
@@ -43,21 +43,21 @@ Yes, input is sanitized. *Probably.*
 
 ---
 
-### [Graph Calc with Explosion](/demo/graph_with_explosion/main.html)
+### [Graph Calc with Explosion](https://blueg15.github.io/projectsHistory/demo/graph_with_explosion/main.html)
 
 Game-like spin on the graphing calculator — try inputting wild functions and see what happens.
 Forked from Graph Calc; same notes apply.
 
 ---
 
-### [Grass Simulator 1](/demo/grass_field/main.html)
+### [Grass Simulator 1](https://blueg15.github.io/projectsHistory/demo/grass_field/main.html)
 
 Grassy field reacting to mouse movement.
 Note: should probably be a wallpaper someday.
 
 ---
 
-### [Hover 3D](/demo/hover_3d/main.html)
+### [Hover 3D](https://blueg15.github.io/projectsHistory/demo/hover_3d/main.html)
 
 3D card rotating with mouse movement.
 Fun fact: accidentally recreated Steam trading cards.
@@ -65,7 +65,7 @@ Simplest demo math-wise.
 
 ---
 
-### [Wave Simulator](/demo/wave_sim/main.html)
+### [Wave Simulator](https://blueg15.github.io/projectsHistory/demo/wave_sim/main.html)
 
 Wave physics playground.
 **Controls:** Left click to send a shockwave outward (strength depends on mouse distance).
@@ -74,19 +74,19 @@ Made to study wave interference.
 
 ---
 
-### [DVD Bubble Sim](/demo/dvd_bubble_sim/main.html)
+### [DVD Bubble Sim](https://blueg15.github.io/projectsHistory/demo/dvd_bubble_sim/main.html)
 
 DVD logo meets bubble effects. Pure fun.
 
 ---
 
-### [Gulugulu Translator](/demo/gulutrans/main.html)
+### [Gulugulu Translator](https://blueg15.github.io/projectsHistory/demo/gulutrans/main.html)
 
 Early experiment with **lossless encryption/decryption** (inefficient, but funny).
 
 ---
 
-### [Glowing Dots](/demo/glowing_dots/main.html)
+### [Glowing Dots](https://blueg15.github.io/projectsHistory/demo/glowing_dots/main.html)
 
 Glowing dots follow your mouse using a **kd-tree** for fast nearest-neighbor search.
 
@@ -94,7 +94,7 @@ Glowing dots follow your mouse using a **kd-tree** for fast nearest-neighbor sea
 
 ## Games section
 
-### [That One Calculator Game](/game/calculator/main.html)
+### [That One Calculator Game](https://blueg15.github.io/projectsHistory/game/calculator/main.html)
 
 Puzzle based on 7-segment display toggling.
 **Goal:** turn off all the lights.
@@ -108,7 +108,7 @@ Inspired by *Lights Out*; likely solvable via linear algebra.
 
 ---
 
-### [Grass Simulator 2 (Now with More FPS!)](/game/grass/main.html)
+### [Grass Simulator 2 (Now with More FPS!)](https://blueg15.github.io/projectsHistory/game/grass/main.html)
 
 WebGL experiment — faster and smoother than Grass 1, even without a kd-tree.
 Now with cutting the grass!
