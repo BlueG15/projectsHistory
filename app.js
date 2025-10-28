@@ -41,9 +41,9 @@ let projectList = {
             name: "Graph calc with explosion",
             desc: "Demo of the game graph wars, just...input some functions and find out.----------------------------------------Notes: This is a folk of the graphing calculator demo, all notes of that project applies here too."
         },
-        "grass_field" : {
+        "grass_simulator_1" : {
             url: "/demo/grass_field/main.html",
-            name: "Grass field",
+            name: "Grass simulator 1",
             desc: "Demo of a grassy field that reacts to mouse movement.----------------------------------------Notes: I wonder how I can apply this as wallpaper"
         },
         "hover_3d" : {
@@ -77,6 +77,11 @@ let projectList = {
             url: "/game/calculator/main.html",
             name: "That one calculator game",
             desc: "The calculator game I demo to the qp community a while back.----------------------------------------Rules and Controls: Each number toggles the lights that number occupies in a 7 segment display, (on -> off and vice versa).--------------------The goal is given a random reachable state, turn off all the lights.----------------------------------------[Shuffle] button enters speedrun mode and [Clear] button disables it, I completely dont know what the [Enter] button do tbh, doesnt seem to affect anything----------------------------------------Notes: You can get a 00:00:00 time.--------------------This is very similar to [Lights out] and since that was solved using linear algebra, this probably can be as well.--------------------I wonder if any possible state is solvable."
+        },
+        "grass simulator 2" : {
+            url : "/game/grass/main.html",
+            name : "Grass simulator 2, now with more FPS!!!",
+            desc : "My experiement with webgl, significantly better performance than grass 1 without a kdtree. Now with cutting implemented!!"
         }
     }
 }
