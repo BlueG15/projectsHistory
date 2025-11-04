@@ -70,6 +70,11 @@ const projectList = {
             url : "/demo/glowing_dots/main.html",
             name : "Glowing dots",
             desc : "Demo of glowing dots following mouse cursor utilizing kd-tree for fast nearest neighbor search"
+        },
+        "glass" : {
+            url : "/demo/glass/main.html",
+            name : "Glass effect",
+            desc : "Demo of a modular attempt to work with webgl 1, the actual HTML file uses webgl1 to render a cool glass effect, modifiable in real time but I dont wanna add sliders and stuff."
         }
     },
     game : {

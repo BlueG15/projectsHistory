@@ -1,0 +1,58 @@
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #a09595;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#fullImg {
+  width: 96vw;
+  height: 96vh;
+  background-image: url("/demo/glass/landscape.jpg");
+  background-repeat: no-repeat;
+}
+
+#m {
+  border: 5px solid white;
+}
+
+.draggable {
+  position: absolute;
+
+  /* Starting pos, changable by the js */
+  top : 50vh;
+  left : 50vw;
+
+  /* CSS dictative */
+  width: 400px;
+  height: 400px;
+
+  border : 1px dashed white;
+
+  overflow: auto; /* Or scroll */
+  resize: both;
+}
+
+.draggable:hover {
+  cursor: pointer;
+}
+
+.draggable.dragging {
+  border: 1px solid red;
+  cursor: none;
+}
+
+#slider {
+  width : 100%
+}
+
+.invi {
+  display: none;
+}
