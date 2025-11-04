@@ -15,7 +15,7 @@ body {
 #fullImg {
   width: 96vw;
   height: 96vh;
-  background-image: url("/demo/glass/landscape.jpg");
+  background-image: url("./landscape.jpg");
   background-repeat: no-repeat;
 }
 

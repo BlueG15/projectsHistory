@@ -19,6 +19,6 @@ async function init(){
 
     RegisterDraggables([canvas])
 
-    img = await initImg("/demo/glass/landscape.jpg")
+    img = await initImg("./landscape.jpg")
     update()
 }
